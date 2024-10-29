@@ -1,0 +1,13 @@
+CREATE DATABASE empleado1;
+
+USE empleado1;
+
+CREATE TABLE empleados (
+    clave INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    nombre VARCHAR(30) NOT NULL,
+    primer_apellido VARCHAR(30) NOT NULL,
+    segundo_apellido VARCHAR(30) NOT NULL
+);
+
+INSERT INTO empleados (nombre, primer_apellido, segundo_apellido) 
+VALUES ('Alejandro', 'Garcia', 'Lopez');
